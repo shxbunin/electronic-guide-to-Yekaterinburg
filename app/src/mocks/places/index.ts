@@ -1,4 +1,6 @@
-export const places = [
+import type { TPlace } from '@/types/place'
+
+export const places: TPlace[] = [
   {
     id: 'center-of-traditional-folk-culture',
     title: 'ЦЕНТР ТРАДИЦИОННОЙ НАРОДНОЙ КУЛЬТУРЫ СРЕДНЕГО УРАЛА',
