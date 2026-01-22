@@ -10,7 +10,9 @@ export default function Property({ title, description, icon }: PropertyProps) {
       </div>
       <div className="place__about-item-wrapper">
         <h3>{title}</h3>
-        <h4>{description}</h4>
+        {title === 'Сайт'
+          ? <h4><a href={description}>{description}</a></h4>
+          : <h4>{description}</h4>}
       </div>
     </li>
   )
