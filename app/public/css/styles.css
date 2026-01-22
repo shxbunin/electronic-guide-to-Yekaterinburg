@@ -262,6 +262,11 @@ h4 {
         flex-direction: column;
     }
 
+    .map__image-wrapper {
+        height: 70vh;
+        background-color: white;
+    }
+
     .map__about-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
