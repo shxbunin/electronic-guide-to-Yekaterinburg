@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { LiquidGlass } from '@liquidglass/react'
 
 type PlacePreviewProps = {
   title: string
@@ -29,8 +30,18 @@ export default function PlacePreview({ title, images }: PlacePreviewProps) {
         />
       ))}
 
-      <div className="place__title glass-morphism">
-        <h1>{title}</h1>
+      <div className="place__title">
+        <LiquidGlass
+          blur={4.5}
+          contrast={1}
+          brightness={0.8}
+          saturation={1.5}
+          shadowIntensity={0}
+          displacementScale={1}
+          elasticity={0.5}
+        >
+          <h1 className="place__title-text">{title}</h1>
+        </LiquidGlass>
       </div>
     </div>
   )
