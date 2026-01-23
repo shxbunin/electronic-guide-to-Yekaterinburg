@@ -4,7 +4,7 @@ export const places: TPlace[] = [
   {
     id: 'center-of-traditional-folk-culture',
     title: 'ЦЕНТР ТРАДИЦИОННОЙ НАРОДНОЙ КУЛЬТУРЫ СРЕДНЕГО УРАЛА',
-    images: ['/images/place-1.jpg'],
+    images: ['/images/place-1-1.jpg', '/images/place-1-2.jpg', '/images/place-1-3.jpg'],
     properties: [
       {
         title: 'Автобус / троллейбус',
@@ -80,7 +80,7 @@ export const places: TPlace[] = [
   {
     id: 'ural-vision-gallery',
     title: 'URAL VISION GALLERY',
-    images: ['/images/place-3.jpg'],
+    images: ['/images/place-3-1.jpg', '/images/place-3-2.jpg', '/images/place-3-3.jpg'],
     properties: [
       {
         title: 'Трамвай',
@@ -156,7 +156,7 @@ export const places: TPlace[] = [
   {
     id: 'gamayun-museum',
     title: 'ЕКАТЕРИНБУРГСКИЙ МУЗЕЙНЫЙ ЦЕНТР НАРОДНОГО ТВОРЧЕСТВА «ГАМАЮН»',
-    images: ['/images/place-5.jpg'],
+    images: ['/images/place-5-1.jpg', '/images/place-5-2.jpg'],
     properties: [
       {
         title: 'Автобус / троллейбус',
@@ -194,7 +194,7 @@ export const places: TPlace[] = [
   {
     id: 'museum-of-naive-art',
     title: 'МУЗЕЙ НАИВНОГО ИСКУССТВА',
-    images: ['/images/place-6.jpg'],
+    images: ['/images/place-6-1.jpg', '/images/place-6-2.jpg'],
     properties: [
       {
         title: 'Автобус / троллейбус',
@@ -232,7 +232,7 @@ export const places: TPlace[] = [
   {
     id: 'underground-museum',
     title: 'МУЗЕЙ АНДЕГРАУНДА',
-    images: ['/images/place-7.jpg'],
+    images: ['/images/place-7-1.jpg', '/images/place-7-2.jpg', '/images/place-7-3.jpg'],
     properties: [
       {
         title: 'Автобус / троллейбус',
@@ -270,7 +270,7 @@ export const places: TPlace[] = [
   {
     id: 'hermitage-ural',
     title: 'ЭРМИТАЖ-УРАЛ',
-    images: ['/images/place-8.jpg'],
+    images: ['/images/place-8-1.jpg', '/images/place-8-2.jpg'],
     properties: [
       {
         title: 'Автобус / троллейбус',
@@ -308,7 +308,7 @@ export const places: TPlace[] = [
   {
     id: 'sinara-art-gallery',
     title: 'ГАЛЕРЕЯ СИНАРА АРТ',
-    images: ['/images/place-9.jpg'],
+    images: ['/images/place-9-1.jpg', '/images/place-9-2.jpg'],
     properties: [
       {
         title: 'Автобус / трамвай',
@@ -384,7 +384,7 @@ export const places: TPlace[] = [
   {
     id: 'yeltsin-center',
     title: 'АРТ ГАЛЕРЕЯ ЕЛЬЦИН ЦЕНТР',
-    images: ['/images/place-11.jpg'],
+    images: ['/images/place-11-1.jpg', '/images/place-11-2.jpg', '/images/place-11-3.jpg'],
     properties: [
       {
         title: 'Автобус',
@@ -422,7 +422,7 @@ export const places: TPlace[] = [
   {
     id: 'museum-of-fine-arts',
     title: 'ЕКАТЕРИНБУРГСКИЙ МУЗЕЙ ИЗОБРАЗИТЕЛЬНЫХ ИСКУССТВ',
-    images: ['/images/place-12.jpg'],
+    images: ['/images/place-12-1.jpg', '/images/place-12-2.jpg'],
     properties: [
       {
         title: 'Автобус / троллейбус / метро',

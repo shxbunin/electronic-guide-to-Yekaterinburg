@@ -8,7 +8,7 @@ export default function PropertiesList({ properties }: PropertiesListProps) {
   return (
     <ul className="place__about-list">
       {properties.map((property: TProperty) => (
-        <li className="place__about-item">
+        <li className="place__about-item" key={property.title}>
           <div className="place__about-item-avatar">
             <img className="place__about-item-image" src={property.icon} alt={property.title} />
           </div>
