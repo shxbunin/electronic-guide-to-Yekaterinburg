@@ -1,0 +1,3 @@
+ploshadkiculturaekb.ru, www.ploshadkiculturaekb.ru {
+    reverse_proxy electronic-guide:80
+}
