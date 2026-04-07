@@ -25,6 +25,33 @@ h4 {
     font-weight: normal;
 }
 
+a {
+    color: inherit;
+    text-decoration-color: rgba(0, 0, 0, 0.3);
+    text-underline-offset: 0.18em;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.page-transition {
+    min-height: 100vh;
+    animation: page-fade-in 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .place {
     display: flex;
     height: 100vh;
@@ -136,11 +163,24 @@ h4 {
 
 .glass-morphism {
     backdrop-filter: blur(5px) brightness(0.8);
+    -webkit-backdrop-filter: blur(5px) brightness(0.8);
     background: linear-gradient(
             120deg,
             rgba(255, 255, 255, 0.1) 0%,
             rgba(255, 255, 255, 0.05) 100%
-    )
+    );
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 18px 45px rgba(22, 26, 29, 0.16);
+}
+
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+    .glass-morphism {
+        background: linear-gradient(
+                120deg,
+                rgba(47, 58, 66, 0.72) 0%,
+                rgba(78, 93, 102, 0.56) 100%
+        );
+    }
 }
 
 .map {
@@ -380,5 +420,13 @@ h4 {
     .map__about-list {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-transition,
+    .place__image {
+        animation: none;
+        transition: none;
     }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { LiquidGlass } from '@liquidglass/react'
+import { isSafariBrowser } from '@/utils/is-safari'
 
 type PlacePreviewProps = {
   title: string
@@ -8,6 +9,7 @@ type PlacePreviewProps = {
 
 export default function PlacePreview({ title, images }: PlacePreviewProps) {
   const [index, setIndex] = useState(0)
+  const [isSafari] = useState(() => isSafariBrowser())
 
   useEffect(() => {
     if (images.length <= 1) return
@@ -30,19 +32,27 @@ export default function PlacePreview({ title, images }: PlacePreviewProps) {
         />
       ))}
 
-      <div className="place__title">
-        <LiquidGlass
-          blur={4.5}
-          contrast={1}
-          brightness={0.8}
-          saturation={1.5}
-          shadowIntensity={0}
-          displacementScale={1}
-          elasticity={0.5}
-        >
-          <h1 className="place__title-text">{title}</h1>
-        </LiquidGlass>
-      </div>
+      {isSafari
+        ? (
+            <div className="place__title glass-morphism">
+              <h1 className="place__title-text">{title}</h1>
+            </div>
+          )
+        : (
+            <div className="place__title">
+              <LiquidGlass
+                blur={4.5}
+                contrast={1}
+                brightness={0.8}
+                saturation={1.5}
+                shadowIntensity={0}
+                displacementScale={1}
+                elasticity={0.5}
+              >
+                <h1 className="place__title-text">{title}</h1>
+              </LiquidGlass>
+            </div>
+          )}
     </div>
   )
 }
